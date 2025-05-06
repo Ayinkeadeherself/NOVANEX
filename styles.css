@@ -37,7 +37,27 @@ body {
 .logo h1 {
     color: var(--primary);
     font-size: 1.8rem;
+    margin: 0;
 }
+
+/* Logo Container Styling */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo {
+    height: 30px; 
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar .logo:hover .nav-logo {
+    transform: rotate(12deg); 
+}
+
 
 .search-bar {
     display: flex;
@@ -144,7 +164,7 @@ body {
         /* === HERO SECTION === */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1800&auto=format');
+                        url('Nova.jpeg');
             height: 100vh;
             display: flex;
             align-items: center;
@@ -264,6 +284,51 @@ body {
             font-weight: 700;
             display: block;
         }
+
+        /* Sign Up Form Styling */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #f5f6fa;
+  }
+  
+  .signup-form {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .form-logo {
+    width: 120px;
+    margin-bottom: 25px;
+  }
+  
+  .signup-form h2 {
+    margin-bottom: 30px;
+    color: var(--secondary);
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .signup-form .btn {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+  }
 
         /* Footer */
 footer {
